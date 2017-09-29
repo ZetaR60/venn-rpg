@@ -1,0 +1,1 @@
+Venn RPG is a rules-complete tabletop roleplaying game. It is a generic system that supports any action-adventure style of tabletop RPG. The current focus of the project is to provide a complete setting and scenarios for the SCP Foundation universe (http://www.scp-wiki.net/).
