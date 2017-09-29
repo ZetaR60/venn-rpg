@@ -1,0 +1,1086 @@
+\documentclass[letterpaper,titlepage,openany,twocolumn]{book}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\usepackage[toc]{multitoc}
+
+\frenchspacing
+\raggedright
+\setlength{\parindent}{1cm}
+
+\begin{document}
+
+\frontmatter
+
+\title{The Venn Tabletop Roleplaying Game System}
+\date{\today\\Development Version}
+\author{By Matthew Blue}
+\maketitle
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+%\listoffigures
+%\listoftables
+
+\mainmatter
+
+\part{The Venn System Core Rules}
+
+\chapter{Overview}
+Venn is designed to have a generic ruleset for tabletop RPG adventuring. Within the generic ruleset, Venn specifies standard genre rules for common tabletop genres such as swords and sorcery.
+
+\section{The Narrative}
+TODO: divisions of a story: campaign, scenarios, encounters/scenes. Also, intro, denouement (ending, wrapping up loose ends), and downtime.\\
+
+\section{The Game Master and Players}
+TODO: game master, player, controller, character, PC, NPC, creature, etc.\\
+TODO: GM roles: author (of the scenario, etc.), director (of NPCs, events, etc.), arbiter (rules disputes), manager (organizing games, scheduling, moderating sessions).\\
+TODO: game social contract: player expectations of the GM; GM expectations of the players. Policy on GM breaking rules / houseruling / fudging rolls. Policy on resolving rule disputes. Policy on derailing and following plot hooks and background hooks. The use of alignment as part of the social contract. Limits to “just playing my character”, and being a cooperative player with an uncooperative character. Expectations of NPC behavior (e.g. to prevent GMPCs). When splitting the party is appropriate.\\
+TODO: Metagame - Dealing with concerns of the players and GM, as opposed to the characters in the gameworld. Metagaming, out-of-character, in-character\\
+
+\section{Tools of Tabletop Role-playing}
+TODO: explain things that are obvious to people that are already familiar with tabletop RPGs. e.g. character sheets\\
+
+\section{Goals of the Venn Ruleset}
+TODO: divisions of the ruleset: core, genre, setting, and the purpose of these divisions\\
+TODO: Goals of a good ruleset: a) be simple enough to simulate easily; b) give story detail (incl. characters) mechanical consequences; c) represent the world well enough that common-sense intuition predicts the rules; d) prevent any absurd strategy (def. by comparison with real world) from having optimality. Consider how game balance fits in (or doesn’t, by preventing the need to balance by ensuring multiple optima). Fun specifically is NOT a design goal, because fun is too dependent on other factors, however ease of having fun should emerge from the system.\\
+
+\chapter{Fundamentals}
+TODO: an “act” is a thing you want to do. “action” has a specific meaning defined in later chapter.\\
+TODO: replace some uses of “thing” with “entity”\\
+TODO: player detail management and the use of templates (e.g. prebuilt classes, weapons, spells, etc.)\\
+TODO: standard metric prefixes for large numbers, to make computations much easier.\\
+
+\section{Rules and Flavor}
+TODO all\\
+
+\section{Formalization of the Narrative}
+TODO all\\
+
+\chapter{Dice and Rolling}
+TODO: Dice notation\\
+
+\section{Checks}
+Most rolls in the game are checks: a roll using the 20-sided die (d20) determines whether an attempted act succeeds or fails. When a creature is making an attempt, the creature’s controller rolls a d20 and adds any relevant modifiers. If the resulting number is greater than the difficulty, then the act succeeds, otherwise the activity fails. A creature may always choose to fail a check without its controller making the roll. Creatures are almost always aware of a check they are attempting, and how well they did in their attempt. Only when something actively prevents their realization (such as mind-altering magic) do they not know. If the results of the check are apparent, it also knows whether it succeeded or failed.\\
+
+The difficulty (or diff) of an act is a number representing how hard that activity is. With a zero modifier (+0), there is a 50% chance of success on a diff 10 act. The difficulty of an act is equal to 10 plus any relevant modifiers. Generally, if a creature has the ability to assess the situation before (or during) their attempt they can tell how difficult the act is. A game master may, for example, reveal the difficulty of a check in subjective terms (“this is a very difficult check”), or optionally the exact number if revealing this expedites play.\\
+TODO: clarify that there can be multiple diffs for degrees of success. e.g. failure to disarm a trap but not setting it off\\
+
+There are three specific kinds of checks: attack rolls, saving throws, and ability checks.\\
+
+Attack rolls represent aggressive acts of one creature that are opposed by another. The aggressor's controller rolls the check, and the defender sets the difficulty. Examples of acts that use an attack roll: striking with a sword, grappling, disarming.\\
+TODO: Clarify the breadth of attack rolls. Possible rename?\\
+
+Saving throws represent defensive acts where the defending creature is more actively determining the outcome than the aggressor. The defender’s controller rolls the check, and the aggressor sets the difficulty. Examples of acts that use a saving throw: avoiding an explosion, resisting a magical compulsion.\\
+TODO: Clarify that a save can be against something that has no aggressor.\\
+
+Ability checks represent acts that are normally unopposed and are difficult simply because the act being attempted is naturally difficult, or because the circumstances make it difficult. Examples of acts that use an ability check: Jumping a chasm, treating a wound, persuading an NPC. Sometimes an ability check is opposed by one or more creatures and it doesn’t make sense to consider it an attack roll or saving throw. This is called an opposed ability check. Each creature’s controller rolls the check as normal, but instead of comparing it to a difficulty, the results of each roll are compared and the one with the highest wins the roll. If there is a tie for highest, each tied controller re-rolls until the tie is broken.\\
+TODO: Make the use of ability checks fit the intuitions of players better, e.g. consider: is grappling an opposed ability check or is it an attack roll?\\
+
+There are two special cases for the outcome of a roll. If the die result is a 20 (called a natural 20) the act is considered a critical success (or crit) and it automatically succeeds if success is plausible. If the die result is a 1 (called a natural 1) the act is considered a fumble and it automatically fails if failure is plausible. There may be additional consequences to crits and fumbles, depending on the action. For example, a critical success on an attack roll against an armored foe may mean that the attacker hits a gap in the armor that they wouldn’t normally have hit (even on a success). Various things may modify the die results that give a crit or fumble to make it a range of values; this is called the critical range or fumble range, respectively.\\
+TODO: intuitive special consequences of crit and fumble, e.g. firing through a tile occupied by an ally could hit them on a fumble.\\
+
+There are four possible consequences for failure: no consequence, wasted time, determined to be impossible, and other special consequences.\\
+TODO: clarify that penalty of failure can involve multiple things, and not just one category.\\
+
+An act that has no consequence only requires a  roll when the creature making the attempt is trying to perform the act quickly, such as during combat. The act still requires part of the creature’s turn to perform, but when a creature is not particularly pressed for time the attempt automatically succeeds if success is plausible.\\
+
+An act may waste time if it fails. Unlike an act with no consequence, the amount of time wasted is significant even when the creature is not pressed for time. If a creature would normally be able to re-attempt an act until succeeding, then rather than re-rolling over and over the attempt automatically succeeds if success is plausible, but with a significant amount of time wasted. The creature may abandon the effort after a small amount of time wasted, or continue the effort with much more time wasted to succeed. A second creature may make the attempt instead, and if they succeed it only wastes that small amount of time. However, if they also fail it interrupts the first creature’s attempt, wasting even more time than if the second creature hadn’t interrupted. Wasting time in a dangerous circumstance may lead to being attacked or caught by hostiles, for instance. It may also lead to the time of day advancing.\\
+
+An act may be determined to be impossible by a failed roll. In this case the thing being determined is whether the creature actually possesses the capability to do something. For example, the general knowledge of a creature may be abstracted by a bonus to its education skill, but specific general knowledge is not captured by this abstraction. In this case, an education ability check actually determines whether the creature has the specific knowledge in question. If the check is a success, then any closely related attempts involving that knowledge automatically succeed. If the check is a failure, then closely related attempts automatically fail. Another example: The controller of a creature may not have the same foresight as the creature regarding what items it should possess. If that controller forgets an item, they might make an ability check to see if their creature has that item (so long as the cost of the item is negligible). A success determines that it possesses the item, and they can add it to the list of the items the creature possesses. A failure determines that they do not possess the item. In each case, a change to the circumstances may allow a re-attempt. If a creature has a chance to stop and think for a while, it may remember something that it did not remember under more pressing circumstances. A creature that was reminded that it should have an item by not having it when it was needed might acquire it even if its controller forgot.\\
+TODO: Determined impossible due to missed opportunity?\\
+
+An act may also have specific special consequences that depend on the specifics of the situation For example, a creature attempting to jump a chasm may fall into it if it fails its check.\\
+
+\section{Multi-Creature Checks}
+Sometimes, multiple creatures have to make a check collectively. There are three ways to do this in Venn: assist actions, group rolls, and collaborative rolls.\\
+
+In the simplest case, one creature is assisting another creature. The creature is using an assist action, and it confers a benefit to the creature being assisted. See Chapter 3: Actions for more information on this case.\\
+TODO: Assist action.\\
+
+When multiple creatures are working together in a group and they must together succeed in a task, but their efforts do not combine, they make a group roll. A group roll has the same difficulty as a non-group roll, but rather than require each creature to pass individually, only half or more of the group must exceed the difficulty to succeed. It is presumed that more successful members of the group help those that did not exceed the difficulty to perform better than they would have otherwise. However, if one or more of the members fumbles, they cause the whole group check to fail. One example of a group roll is if a group of creatures is searching a room: by dividing the searching amongst the members of the group, they are able to search it considerably faster. A creature that has failed in its search of its part of the room is aided by the other creatures. If one of them fumbles, they distract the other members of the group from conducting a proper search. Another example is a trying to sneak as a group: those that perform poorly at hiding and moving quietly can be aided by those that are more successful. However, if one of them fumbles they may inadvertently make a loud noise, for example.\\
+
+When multiple creatures are working together in a group and their efforts combine in a meaningful way, they make a collaborative roll. The result of each roll is divided by ten (rounding down) and added together. If this number is greater than the difficulty, then the group succeeds. Working together collaboratively can allow creatures to succeed in tasks that otherwise would be impossible. Note that the difficulty of these tasks is on a different scale than the difficulty of an individual’s roll. An example of a collaborative roll is working together to move a large and heavy object.\\
+
+\section{Dynamic Modifiers for Checks}
+For each kind of check, there is a corresponding set of modifiers to both the roll and the difficulty. There are four types of modifier: base modifiers, means modifiers, environ modifiers, and state modifiers. Anything that gives a bonus or penalty to a check is combined into one of these modifiers. Unless otherwise noted, the default value of the means and environ modifiers is +3, and the default value of the state modifier is -3.\\
+TODO: consider: should the default be specified here, or in action-adventure rules?\\
+
+The base modifier of a check is always added to that particular kind of check, no matter the circumstances in which the check occurs. This is the contrasted with the other three kinds of modifiers, which are meant to capture the influence of circumstance on success or failure. The base modifier is meant to capture the basic capability of a creature to perform an act, no matter the details of the specific situation. A creature’s degree of skill in a task is an example of something that would use the base modifier.\\
+
+The means modifier of a check is added when a creature is using some means to perform the act which significantly benefits its chances of success. Anything that involves the way the creature is specifically performing the act could be represented by a means modifier if it is sufficiently beneficial. In addition, things negatively affecting the recipient of the act may also give the modifier. For example, attacking a foe while they are unaware could give the means modifier to attack. Breaking open a box using a crowbar, rather than by hand, is another example.\\
+
+The environ modifier of a check is added when the surroundings significantly benefits a creature’s chance of success. This may be things around the creature, or around the thing it is acting on. If the surroundings of the thing it is acting on negatively affects that thing, it may also give the modifier. For example, attacking a foe while it is busy being engaged by an ally (i.e. flanking the foe) could give the environ modifier to that attack. Crouching in cover is another example that may give a bonus to avoid getting hit by a projectile.\\
+
+The state modifier of a check is added when something is negatively affecting the physical or mental well-being of a creature. Unlike the means and environ modifiers, the state modifier is always negative; this is because the absence of any dynamic modifiers represents the typical state of most creatures. Inebriation, or being wounded, or being poisoned are examples of things that may impose the state modifier. In some cases, a thing positively affecting the state of a creature may impose a state modifier on the thing it is acting on. For example, using magic to speed up all of the movements of a creature makes everyone else slower by comparison, so that actions of the fast creature impose a state modifier on the thing they are acting on.\\
+TODO: Clarify multiple sources of dynamic bonus, e.g. two things that give means, cancellation of two opposing sources (means to roll and means to diff), and the impossibility of certain actions given certain modifiers.\\
+
+For any given check, each modifier relevant to the creature acting is added together with the result of its d20 roll, and each modifier relevant to the difficulty is added to 10 to yield the difficulty of the act. Because there are three dynamic modifiers, there are 8 combinations of modifiers for the roll, and 8 for the difficulty. For convenience, these should be pre-added together in each combination and presented in a convenient format, such as a Venn diagram. This feature is the origin of the name of the Venn system. Thus, with the diagram only one addition is required for each roll and one addition for each difficulty, but it gives 64 total combinations to account for the circumstances of an attempted act.\\
+TODO: Venn diagram graphic.\\
+
+\section{Static Modifiers for Checks}
+TODO: stricter rules for when characteristics can be modified out of turn-order. Define a “rest” equivalent for small char modifications, and downtime for larger char modifications.\\
+
+\section{Numerical Rolls}
+Numerical rolls represent a size or amount of something. The controller of the source of the effect rolls one or more d4, d6, d8, d10, or d12 and adds the bonus or penalty that is specified for that kind of act. If relevant, a thing receiving the effect subtracts its bonus or penalty as well. For example, the controller of a mage might roll 3d6+3 for the damage of a spell, and the creature the mage is attacking might subtract 5 damage for being resistance to fire. Note that the d20 is not recommended for numerical rolls; this is because dice with an average value between the d12 and the d20 are very uncommon, thus leaving a large gap in the progression of the averages from one die to another.\\
+TODO: Effects with numerical tagging, conditional double/half.\\
+TODO: roll progression (approx. exponential 30%):\\
+1	1.5	2.5	3.5	4.5	5.5	6.5\\
+1	1d2	1d4	1d6	1d8	1d10	1d12\\
+				9	11	13\\
+				2d8	2d10	2d12\\
+					16.5	19.5\\
+					3d10	3d12\\
+						26\\
+						4d12\\
+
+\section{Miscellaneous Rolls}
+Timing rolls are an alternative to tracking in-game timed events, such as the recharging of limited abilities during combat. Instead of counting the number of rounds until an event, for each segment of time specified the controller of the source of the event rolls a d12 and compares it to the number specified for that event (e.g. “Timed: 10/round”). If the die result meets or exceeds that number, the event occurs. The average number of time segments until the event occurs is 12/n, where “n” is the number of die results that indicate a success. Note that the average number of segments is a whole number for 12, 11, 10, and 9, which is why the d12 is preferred for timing rolls.\\
+
+Table rolls represent outcomes that cannot be represented by a number or by success/failure. The controller of the creature, effect, etc. rolls the die indicated and looks up the result in the table included with the rules for the thing they are rolling for.\\
+
+\chapter{Acting within the World}
+TODO: make use of “it” and “they” consistent for creatures\\
+
+\section{Division of Time}
+TODO: Rules about long-duration things in turn-order; essentially time is paused and time of day does not typically increase while in turn-order.\\
+TODO: Clarify that tracking time of day is not required in some cases (but it is still implicit).\\
+TODO: recommendations on durations, e.g. end an effect when the time of day advances so that its duration does not need to be tracked while in turn-order.\\
+
+In the real world, the actions of every person happens simultaneously, and the results are resolved by physical law. However, the kind of simultaneity that occurs in the real world is very difficult to capture in a set of game rules. Thus, Venn, like other RPG systems, uses fictitious simultaneity to resolve the events occurring within the game. If the exact ordering of events is important to the outcome of an encounter, each creature acting takes a turn and these turns are resolved sequentially. However, the amount of time each of these turns takes is considered to be the same as the time all of the turns take to resolve. Acts in these turns are imagined to be simultaneous with slight differences in timing leading to the ordering of events. While this is not very realistic, it vastly simplifies the problem of resolving events.\\
+
+A round is the most basic segment of time in Venn. During a round, each creature gets a turn in which to perform its actions. The exact length of time a round represents can vary depending on how the creatures are interacting. For example, in a sword fight the round might be 6 seconds of fighting, whereas in a naval battle a round may be a couple minutes. The round length should be long enough that every creature may do something significant and meaningful, but short enough that the players and game master may resolve the round quickly. After each creature has its turn, a new round begins and each creature gets a turn again, and so on.\\
+TODO: Resolve potential interaction between conflicting round lengths, or creatures with a power giving them multiple turns.\\
+
+A turn is when a creatures actions are resolved (besides a couple of special cases). Actions in the turn have the same fictitious simultaneity as turns in the round. Each type of action is supposed to be something that could be reasonably carried out simultaneously with every other type of action. However, the order in which each action resolves is determined by the creature’s controller, and occurs sequentially. The supposed simultaneity guides the intuition with respect to what a creature should generally be able to do on its turn.\\
+
+While Venn mechanically considers creatures to always be acting in turns, there are many cases where it is unnecessary and cumbersome to track the turns; when running the game without explicit tracking of time, the game is in implicit time. When using implicit time, creatures are still constrained by turns and turn order, but the events transpiring are straightforward enough that the game master and players can use their intuition of how the order of events unfold. The game can transition between implicit time and explicit turn-order as needed.\\
+
+Many rules in Venn also interact with periods of time much longer than a round. In these cases the time of day is used to track events. The day is broken up into segments of time which vary depending on what sorts of acts need to be represented. For example, in an area where there are hostiles about the time of day may be broken up into 15 minute segments. In a relatively peaceful area the segments may be a couple hours long. While the segments are usually less than a day long, they may exceed a day, such as when on a long voyage. Creatures may perform acts which take a significant amount of time compared to the time segments; in this case performing those acts advances the time of day. There are often consequences to advancing the time of day, such as coming across a wandering creature, or triggering an event that is set to occur at a specific time of day.\\
+
+\section{Action Economy}
+TODO: Clarify when a creature gets more actions, esp reactions\\
+TODO: clarify that multiple acts can occur sequentially for an action. e.g. multiple attacks.\\
+
+There are six types of action in Venn: primary actions, secondary actions, move actions, free actions, reactions, and complex actions. “Action” in this context is a specific formalization of doing things; for this reason, the word “act” is preferred for denoting the looser concept of a creature doing something. Because each kind of action is meant to be something that can be carried out simultaneously, a creature can use one of each kind of action on its turn (with some exceptions, as noted below). Each different kind of action describes a different part of how the creature is able to act in general.\\
+
+During a primary action a creature is able to act with its main appendage (or equivalent) with the aid of the rest of its body. For example, properly performing a thrust with a sword requires not just the movement of the arm, but also of the shoulders, torso, waist, etc. to aid the strike. Another example is the bite of a wolf; the wolf is using one of its main means of interacting with other creatures (its mouth) with the aid of the rest of its body. Because the rest of the body is aiding one primary action, the creature is unable to perform another primary simultaneous to the first. For this reason, all creatures only receive one primary on their turn. Primary actions also include mentally analogous acts; if a creature is focused on one thing and is thinking about it (i.e. mentally acting with the aid of the rest of the mind), it is performing a primary action. For example, reading requires both focus and thought and therefore is a primary. Even if one primary action is physical and another primary is mental, a creature is unable to do them simultaneously because the physical primary also require the main attention of the creature. In addition to what they could normally do, a creature can always do less than what they are capable of for their primary; thus, anything they could do as a secondary action or reaction can be done as a primary action instead, in addition to their normal secondary and reaction. A creature can also focus its whole body and mind on a movement, and do anything they could do as a movement action as a primary instead.\\
+
+A secondary action is similar to primary action in that it requires the use of an appendage (or equivalent) of a creature, but unlike a primary it does not require the aid of the rest of the body. For example, a creature performs a sword thrust with a primary action, but it may also simultaneously parry its opponent’s sword with a buckler held in the off-hand as a secondary action. However, a wolf that is both running and biting on its turn does not have an appendage left to do a secondary action with. Likewise, a mental secondary requires a moment of focus by the creature, but little abstract thought (i.e. it is done intuitively). For example, a quick appraisal of something to see if a creature has any insight into its nature might be a secondary. Also, because reactions are much swifter, so anything a creature could do as a reaction can be performed as a secondary. Some creatures may be capable of performing more than one secondary action on their turn if they have a greater natural capacity for acting. A creature with four arms, for instance, may be able to perform its primary with one arm, and up to three secondaries with its other arms (provided it is mentally capable of coordinating the task). Another example: An artificial intelligence with a large amount of computing power at its disposal may be capable of performing an arbitrarily large number of purely mental secondary actions.\\
+
+During a move action, a creature uses its means of locomotion to move to a different place. This could involve running, jumping, swimming, flying, driving, sailing, etc. depending on the nature of the creature and what sorts of movement are required. Some creatures may also be able to use their move action to do other things. A skilled martial artist may be able to use a move action to kick, for example. For more information on movement rules, see “Movement” below.\\
+
+A free action is one that is so brief and easy to do that it doesn’t make sense to limit it by making it one of the other types of action. Generally free actions can be taken freely, as the name suggests. This does not mean they are without limit, but rather that common sense is a better judge of their limits than a formalized action. For example, speaking during a sword fight is a free action, but it is still limited to what can be said during the length of a turn (probably a couple sentences in this case). Free actions can also be taken anytime during the round, unlike most other types of action. For instance, looking around and seeing what is going on is a free action, and can be done at any time. Also, for simplicity a saving throw is always a free action.\\
+TODO: reaction, complex\\
+
+\section{Initiative}
+When multiple creatures want to do something simultaneously, and the order of their acts has a significant effect on the outcome, a formalized initiative system is used. So long as at least one creature wants to act, one of the potential actors will have initiative. When a creature has initiative it is in the process of taking a turn. Once its turn is complete, initiative passes to another creature (if there is another creature who wants to do something). This process continues until every creature who wishes to act has had a turn, and then the round ends and a new round begins. Typically a creature can only have initiative once per round.\\
+
+If a creature is attempting to perform an act and no other creature is clearly attempting to act at the same time, then that creature takes the initiative, and may take its turn. Equivalently, if the game is in implicit time and it is intuitively clear that the creature’s action is the single thing that causes events that require changing to turn-order, then that creature has taken the initiative.\\
+
+Sometimes a creature has the option of choosing to take its turn next. This creature is said to have priority. 	If a creature (or multiple creatures) is subject to an effect created by another creature, then that creature gains priority. Being subject to a hostile or aggressive effect gives a greater priority than a neutral or friendly effect, and creatures with a greater priority may choose to go before creatures with a lesser priority. In general, if an effect is clearly more direct and aggressive than another, then that effect gives a higher priority.\\
+
+If there is no creature that has priority due to being subject to an effect, or all the creatures that had such priority chose not to take there turn, then creatures in the same party as the creature currently taking its turn have priority. A party is a coordinated group of creatures which are working together. Generally, if those creatures are closely aware of the acts of the other creatures and are adapting their acts in a cooperative manner, that is sufficient to be considered a party. If the members of a party are attempting to take the initiative in a coordinated manner, and no non-party creatures are attempting to take the initiative, then that whole party is said to have taken the initiative, and so they all gain priority.\\
+
+Giving priority to a creatures party when that creature has initiative is unusual compared to most tabletop RPGs; the justification is twofold: firstly, it allows parties to better act as a cohesive unit when appropriate, such as by allowing them to ready their actions like in RPGs that order combat by declaring acts and then resolving simultaneously; secondly, it greatly simplifies the decision of when exactly a party’s acts provoke a response from an opposing party (this decision is now the same as deciding when the opposing party has priority).\\
+
+If multiple creatures are attempting to act and they all have the same priority, or none of them has priority, they must roll for initiative. Each of them rolls an opposed ability check using their initiative bonus (including any relevant dynamic modifiers), and the winner has the initiative. Often when in a party, creatures are able to coordinate enough to defer to one another and come to an internal agreement about who should go next, and so rolling for initiative is usually not required when it is a whole party that has priority. However, if they are not able to come to an agreement, those who are unwilling to defer must roll initiative.\\
+TODO: examples\\
+
+\section{Division of Space}
+TODO all\\
+TODO: line of sight, line of effect, area-of-effect, reach, melee, touch\\
+
+\section{Movement}
+Movement uses move points. Each creature has an amount of points per turn, and a cost for moving from one tile to an adjacent tile. If the creature is moving to a diagonal tile on square tiles, the cost is 1.5 times as much (so all movement costs for adjacent tiles should be even).\\
+TODO: Make movement rate constant (x tiles per turn) for varying scales of space and time.\\
+TODO: insert graphics for movement radii.\\
+TODO: marching order recommendations\\
+TODO: multiple movement types, difficult terrain, obstacles\\
+
+\chapter{Effects and States}
+TODO all\\
+TODO: The difference between a characteristic and condition is that a condition may change quickly (that is, it is important during turn-order), and a characteristic may only change when a significant period of time passes (session? Rest?). Three things determine the full state of a creature: characteristic, conditions, and ephemeral states. Ephemeral states are only important for a turn and the turn immediately after, and can then be forgotten. This strict division is to define exactly what the GM (and players) need to remember, and to limit information tracking during turn-order.\\
+
+\section{Effects}
+TODO: distinguish a condition/state from an effect.\\
+
+\section{Ephemerals}
+TODO: effects are ephemerals?\\
+
+\section{General Conditions}
+TODO: Things like position, state of gear, etc.\\
+
+\section{Special Conditions}
+TODO: Consider curses, diseases, afflictions, drugs, infestation, madness, poisons\\
+
+\section{Characteristics}
+TODO: all\\
+
+\chapter{Creature Characteristics}
+TODO: Characteristics can be:\\
+	a) statistics, which give a numerical bonus\\
+	b) abilities (better name?), which are qualitative\\
+TODO: Retraining (talents only)\\
+TODO: background and background points; buying traits using background points. e.g. players of a DnD type game should be permitted to choose races/creatures for their character that have powerful natural abilities by spending background points.\\
+TODO: Guidelines on how much skills (and other rolls) should be relied on (e.g. make perception MUCH less pervasive)\\
+
+A creature is any thing that can take actions. This includes intelligent and some mindless living beings, intelligent non-living things (like robots or undead). Mounts and vehicles are treated as creatures by the game mechanics.\\
+
+\section{Attributes}
+Attributes represent the most general qualities of how good a creature is at certain tasks. Each of these is a modifier that is added to specific tasks. NOTE: This gets rid of the distinction between ability scores and ability modifiers from D\&D. Also, the name is changed from “ability”.\\
+
+\section{Traits}
+Traits represent inherent and mostly unchanging qualities of a creature. This includes the biology and upbringing of the creature. Generally traits are fixed and do not change except in exceptional circumstances (such as using powerful magic).\\
+
+\section{Feats and Faults}
+Feats and faults represent the achievements and failures of a creature. Each feat or fault has general requirements, and a creature has the feat if they meet the requirements, and lose it if they no longer meet the requirements. NOTE: Feats are no longer obtained through experience / leveling, but are also more minor.\\
+TODO: Better name, suggesting more generality?\\
+
+\section{Skills}
+Skills represent a degree of competence at a certain task. A creature can spend downtime to increase a skill. NOTE: Skills here work the same as D\&D, but are increased in a different way.\\
+
+\section{Talents}
+Talents represent abilities that require constant practice to maintain. A creature can maintain a number of talents based on its experience. Each talent has a certain experience requirement, and a creature’s total talent cost cannot exceed its total experience. For simplicity, it is assumed that the creature spends part of its free time maintaining its talents. NOTE: This is intended to replace class features. Fixed classes no longer exist.\\
+TODO: discuss progression trees.\\
+TODO: Experience is awarded for overcoming an obstacle in order to accomplish a goal (NOT for simply killing monsters). There may be penalties (applied only within scenario, never giving negative exp) for hindering goals.\\
+
+\section{Knowledge}
+Knowledge represents the ability to apply a specific skill in a certain way. Knowledge does not have a bonus associated with it; either a creature has that knowledge or does not. A creature may spend downtime to learn new knowledge. Examples of knowledge: ability to use specific weapon well, or the ability to play a musical instrument.\\
+
+\section{Powers}
+Powers represent special abilities that a creature has. Normally, any act that another creature can do can at least be attempted by any other creature. Powers are an exception, and grant the ability to do something that cannot even be attempted without the power. Powers can be granted by traits, feats/faults, talents, or knowledge. Examples of powers: spellcasting, a barbarian’s rage.\\
+
+\section{Derived Statistics}
+Statistics are any numbers derived from the other characteristics of a creature. Examples of statistics: hitpoints, attack bonus.\\
+TODO: Point pools are derived stats; normally full pools, normally empty pools\\
+
+\chapter{Possessions}
+TODO all\\
+TODO: scrap encumbrance in favor of storage/packs that use gear slots and provide storage or quick storage slots. Give packs STR requirements, and potentially move point penalties to get larger bags.\\
+TODO: money, income, expenses. Advancing due to funds available.\\
+IDEA: most money should end up being used for consumables, and they should be more powerful or critical for encounters. Some items are priceless, and can only be traded for other priceless items. Some items require custom fitting, so must be commissioned.\\
+TODO: Sizes:\\
+	0	negligible size\\
+	1	can generally fit in the hand\\
+	2	is not awkward to lift with one hand\\
+	5	is cumbersome to lift with one hand\\
+	10	requires two hands\\
+	20	cumbersome with two hands\\
+	50	difficult for one person to move\\
+
+\section{Gear}
+TODO: Gear bonuses always stack? Limitations? Consider shields and parrying both adding to melee defense.\\
+
+\section{Tools}
+TODO: Tool bonuses don’t stack since only one can be used at a time.\\
+
+\section{Consumables}
+TODO all\\
+
+\section{Vehicles and Mounts}
+TODO all\\
+
+\section{Miscellaneous}
+TODO all\\
+
+\chapter{Environment}
+TODO all\\
+TODO: traps, hazards, special terrains\\
+
+\section{Terrain and Buildings}
+TODO all\\
+
+\section{Features}
+TODO all\\
+
+\section{Obstacles}
+TODO all\\
+
+\section{Responsive Objects}
+TODO all\\
+
+\part{Venn Action-Adventure Rules}
+TODO: chapter for environment rules, for e.g. falling damage, suffocation, etc.\\
+TODO: vision, light, darkvision, infravision, etc.\\
+
+\chapter{The Foundations of Heroic Fiction}
+TODO: Talk abount the conditions necessary for epic heroism (the breakdown of societies ability or willingness to act):\\
+	Society does not exist (post-apocalyptic)\\
+	Or it is corrupt (*punk, etc.)\\
+	Its reach is short (feudal; frontier)\\
+	Doesn’t know/believe heroes (e.g. paranormal)\\
+	Heroes are more powerful (superheros, etc.)\\
+
+\chapter{Default Statistics}
+TODO all\\
+TODO: Define behavior of negative damage and negative damage reduction. e.g. dealing -5 fire damage to a creature with -10 fire resistance gives a total of 5 HP damage.\\
+TODO: Default movement speed (for humans) is 18 points. Adjacent tiles cost 2, and diagonals 3.\\
+TODO: Required traits: hitpoints, equipment slots, weapon slots, size, movement points\\
+TODO: trust, reputation, factions\\
+
+\section{Attributes}
+There are six standard attributes in Venn action-adventure: agility, dexterity, strength, acumen, intelligence, and willpower. The attributes of a creature are determined at its creation, either by rolling or by point buy.\\
+
+Agility represents quickness and reflexes. Governs quick melee and ranged attacks, evasion, initiative.\\
+
+Dexterity represents precision and balance. NOTE: Dexterity from D\&D has been split into dexterity (precision movements) and agility (quick movements), since it modified more things than any other ability. Governs most ranged attacks.\\
+
+Strength represents physical power and stamina, as well as physical presence. NOTE: Constitution has been removed (because it did not modify much besides hitpoints and CON saves). Some of the things it modified are merged into strength. Governs most melee attack rolls, lifting, carrying, and throwing objects, some climbing, swimming, breaking objects.\\
+
+Acumen represents quickness of mind. It is the mental analog of agility.\\
+
+Intelligence represents the ability to reason, learn, and to recall what has been learned. It is the mental analog of dexterity.\\
+
+Willpower represents strength of personality and mental presence within the world. It is the mental analog of strength.\\
+
+To determine attributes by rolling, roll 10d2-15 six times. Results lower than -3 may be rerolled. If the total of all of the numbers is -3 or less, then all of the numbers may be rerolled. Then assign each of the numbers to one attribute each. Before rerolling this method has the following distribution:\\
+-5\\
+-4\\
+-3\\
+-2\\
+-1\\
+0\\
++1\\
++2\\
++3\\
++4\\
++5\\
+0.1\\
+1%\\
+4%\\
+12%\\
+21%\\
+25%\\
+21%\\
+12%\\
+4%\\
+1%\\
+0.1\\
+
+Then, decide how this creature compares to an average creature, and add or subtract a value representing this comparison to all of the attributes. For instance, if a creature is generally 5% more competent than the average, add a +1 to all stats. If rolling for a player character, it is recommended that the character be 10% better than the average (+2 to all attributes).\\
+
+To determine attributes by point-buy, first decide how the creature compares to the average. Then determine how many points it would cost (using the below table) to add or subtract this value to all attributes. That number of points is how many are available to spend. For instance, if a creature is generally 5% more competent than average, it has 6 points to spend on attributes. If buying for a player character, it is recommended that the character be 10% better than the average, giving 12 points to spend.\\
+Bonus\\
+-3\\
+-2\\
+-1\\
+0\\
++1\\
++2\\
++3\\
+Cost\\
++5\\
++2\\
++1\\
+0\\
+-1\\
+-2\\
+-5\\
+TODO: Improve competence bonus language.\\
+
+\section{Skills}
+TODO: specific actions governed by skills.\\
+TODO: adversary negotiation guidelines: https://hackslashmaster.blogspot.com.au/2016/06/on-monster-conversation.html\\
+
+There are eighteen standard skills in Venn action adventure: acrobatics, finesse, sleight, precision, stealth, tinker, athletics, heavy, intimidation, deception, improvisation, survival, deduction, design, lore, insight, perception, and persuasion.\\
+
+Acrobatics represents proficiency in dynamic movement, like dives and rolls, running across a difficult obstacle (like a tightrope), escaping from bonds (or other things requiring flexibility), jumping, and climbing dynamically (like Parkour). NOTE: Both athletics and acrobatics can be used to climb: climbing using acrobatics is faster, but more difficult. The governing attribute of acrobatics is agility.\\
+TODO: Acrobatics allows you to take a fall better; specifics\\
+
+Finesse represents proficiency in the use of tools, weapons, and vehicles that are best characterized by quick reaction and movement. Finesse weapons are usually small and light and have good handling, such as knives or pistols. The governing attribute of finesse is agility.\\
+
+Sleight represents proficiency in quick hand movements. This includes the typical meaning of “sleight of hand”, but also things like pickpocketing and quick manipulation of objects. Some kinds of traps are disarmed using sleight of hand. The governing attribute of sleight of hand is agility.\\
+
+Precision represents proficiency in the use of tools, weapons, and vehicles that are best characterized by the need for precise control. Precision weapons usually require more careful control, such as most ranged weapons, as well as large but elegant weapons like the rapier. The governing attribute of precision is dexterity.\\
+
+Stealth represents proficiency in careful maneuvering. This is most typically used in moving without being seen or heard, but it can also be used for anything requiring careful movement, such as walking across thin ice. The governing attribute of stealth is dexterity.\\
+
+Tinker represents proficiency in handicraft, as well as tasks involving skilled manual dexterity. Many traps are disarmed using tinker. The governing attribute of tinker is dexterity.\\
+
+Athletics represents proficiency in movement that requires strength, stamina, and endurance. Running, jumping, swimming, and climbing are athletics. NOTE: Both athletics and acrobatics can be used to climb: climbing using athletics is slower, but easier than acrobatics, and much more difficult climbs require athletics. The governing attribute of athletics is strength.\\
+
+Heavy represents proficiency in the use of tools, weapons, and vehicles that are best characterized by requiring strength to wield properly. Heavy weapons tend to be bigger and heavier than finesse or precision weapons. Spears and larger swords, as well as machine guns and rocket launchers are typically heavy weapons. The governing attribute of heavy is strength.\\
+
+Intimidation represents proficiency in the use of physical presence to manipulate others. This mostly follows the common meaning of “intimidation”, but also includes things like taunting. The governing attribute of intimidation is strength.\\
+
+Deception represents proficiency in deceiving and manipulating others by quick thinking. Disguising, camouflaging, forging, and deceptive imitating are also considered deception. The governing attribute of deception is acumen.\\
+
+Improvisation represents proficiency in tasks that require adaptation to a changing situation. Typically this involves a creative process, such as playing a musical instrument, painting, or oration. The governing attribute of improvisation is acumen.\\
+
+Survival represents proficiency in tasks that require quick thinking while keeping cool under pressure. First aid and practicing medicine in difficult and uncontrolled conditions is survival, though medicine in controlled conditions is governed by other skills (e.g. surgery would be tinker). Survival also includes many outdoor skills and surviving in the wilderness. The governing attribute of survival is acumen.\\
+
+Deduction represents proficiency in drawing conclusions from clues. It is used in many cases where a character has enough information to draw a conclusion, but the conclusion is not immediately obvious. This especially applies when a player character has access to information that is too cumbersome to describe to the player. It is also important when a player has been given enough information to avoid a hostile effect, but that player does not recognize the threat when their character would reasonably avoid it. Appraising or identifying an item, gathering information, and deciphering a riddle are also deduction. The governing attribute of deduction is intelligence.\\
+
+Design represents proficiency in tasks involving careful thought regarding the creation, manipulation, or understanding of a complex object. Crafting that is characterized more by careful thought than skilled manual dexterity are also design. Most engineering tasks, mathematics, electronics, engineering, and research, as well as analogous tasks using magic are design. The governing attribute of design is intelligence.\\
+
+Lore represents proficiency in knowledge-based tasks (not to be confused with the specific use of knowledge as a characteristic of creatures). If a character has no relevant knowledge [characteristics], then this represents general knowledge. If a character has a knowledge-based knowledge, then their knowledge in this domain is governed by lore. The governing attribute of lore is intelligence.\\
+TODO: Make lore description less confusing\\
+
+Insight represents proficiency in the understanding of others’ motivations and mental states. Determining whether another character is lying, being coerced, or magically compelled is insight. The governing attribute of insight is willpower.\\
+
+Perception represents proficiency in the use of the senses to detect something that is not immediately apparent. Becoming aware of a sneaking creature, or locating them once aware is perception. Tracking, searching, and spotting secret doors are also perception. The governing attribute of perception is willpower.\\
+
+Persuasion represents proficiency in influencing others in a straightforward, non-coercive manner. This may be an appeal to logic, reason, attitudes, beliefs, emotions, etc. The governing attribute of persuasion is willpower.\\
+
+PLACEHOLDER: 12 points to allocate to skills on creation. Cost to add ONE skill point, when current skill is:\\
+Bonus\\
+0\\
+1\\
+2\\
+3\\
+4\\
++1 cost\\
+1\\
+1\\
+2\\
+5\\
+10\\
+TODO: Using social skills on PCs affects their perception (via GM narration).\\
+
+\section{Derived Statistics}
+TODO all\\
+
+TODO: section on modern tactics:\\
+	walking your fire for machine guns\\
+	clarify that you can move (walk) while suppressing (often called marching fire), also walk with readied action?\\
+	establishing a kill zone\\
+	fire and movement; flanking\\
+	creating and moving using a smoke screen\\
+	overwatch and bounding overwatch\\
+	center peel and retreat\\
+	determining the direction of gun fire; crack-bang\\
+	breach and clear tactics\\
+	taking point\\
+	entering at a point that restricts lines of fire on you\\
+TODO: section on medieval tactics:\\
+	phalanx and other polarm formations\\
+	shield walls and testudo\\
+		counter: Flying Wedge, Oblique order\\
+	line formations and volley fire for muskets and bows\\
+		counter: Human wave attack\\
+	skirmishers\\
+
+TODO: discuss movement tradeoff of armor with the stagger system\\
+
+\chapter{Default Abilities}
+TODO all\\
+
+\chapter{Default Item Rules}
+TODO all\\
+TODO: gear slots\\
+
+TODO weapon sizes and slots:\\
+	Very large weapons must be carried in the hands.\\
+	Large weapons must be stowed on the back.\\
+	Medium weapons must be stowed on the back or side.\\
+	Small weapons may be stowed in various places.\\
+
+TODO ration system:\\
+	After a “typical” combat, 1 ammo ration for each weapon used will be consumed. An ammo ration contains multiple units of ammo, which can be optionally counted and ticked off individually (and is recommended when a character only has 1 ammo ration left).\\
+	A personal ration (rename?), is consumed when taking a long rest. Penalties for long rest without ration? Thirst and starvation.\\
+	All rations (and common consumables) are presumed to be replenished during downtime, so player can just track the number used (with tick boxes) and then erase at the end of scenario.\\
+	Ration use adds to ongoing expenses? Automatic expense without player intervention?\\
+
+\chapter{Basic Combat Rules}
+TODO all\\
+TODO: some special actions that give a penalty are unavailable when that penalty is already applied.\\
+TODO: action type for switching weapons. Policy on which weapon readied for the purpose of making AoO. Tracking readied weapon on character sheet. NOTE: prevents absurd strategy of having a weapon with good handling just to make AoO.\\
+FIXME: weapon use bonuses allowed to grow (through relevant skill), while defense does not grow. Use talents + items to give bonuses to defense.\\
+TODO: strict definition of the breadth of readying an action. Prevent absurd strategy of always using ready in place of reactions / AoOs. Try requiring either a specific target, or the targeter of a target.\\
+TODO: define specific angles that provide cover; angles should be easy to determine using both square tiles and hexagonal tiles.\\
+TODO: attacks of opportunity: Trigger on moving again after entering a threatened tile. When hit, lose all remaining movement.\\
+TODO: flanking\\
+TODO: Consider adding back morale/reaction rolls/not everything automatically goes to combat.\\
+TODO: Consider handling mass combat by treating multiple creatures acting together as a single creature.\\
+TODO: damage types\\
+TODO: Consider giving small shields a bigger bonus against melee defense, and large shields a bigger bonus against ranged defense.\\
+
+TODO: actions in combat:\\
+	attack\\
+		melee\\
+		ranged\\
+		called shots\\
+		suppressing\\
+	combat maneuver\\
+		grab (one hand)\\
+		grappling (two hands)\\
+			lock\\
+			pin\\
+			throw\\
+			escape\\
+			constrict\\
+		disarm\\
+		dirty trick\\
+		shove\\
+		feint\\
+		trip\\
+	dash\\
+	use a skill (e.g. hide)\\
+	dodge/juke\\
+	parry (inc. parry for an attack directed at another)\\
+	block\\
+	ready\\
+	searching\\
+	use an item\\
+	aid another\\
+	charge\\
+	disengage\\
+	Reactions:\\
+		dive\\
+		drop\\
+
+TODO: wound system:\\
+	Wound at 0 HP, 1/5 HP, and 1/2 HP\\
+		Light wound (1/2 HP) – state penalty for acts involving that thing, e.g. arm wound give state.\\
+		Moderate wound (1/5 HP) – cannot use that thing effectively, e.g. arm wound prevents use of two-handed items.\\
+		Severe wound (0 HP) – cannot act at all, except restricted actions (e.g. crawling)\\
+	IMPORTANT: hysteresis. Only wounded on one threshold until rising to the next again.\\
+	A wound left untreated (e.g. if time of day advances) worsens by one step.\\
+		A worsening severe wound causes death.\\
+		2 severe causes unconsciousness.\\
+		3 severe causes death.\\
+		(becomes an aggravated wound, which does not worsen further)\\
+	Treat a wound to improve it by one step; becomes a treated wound, which cannot be treated further. Light wounds go away when treated.\\
+	Less-lethal weapons reduce HP without wounding. Causes other problems at wound thresholds? How do less-lethal and lethal combine?\\
+	Research called shots (e.g. Pathfinder) for wound locations.\\
+	Some things may automatically cause wounds, e.g. traps. This is due to HP being easy to recover.\\
+	Wounds must be healed using downtime (define amount of time).\\
+
+PLACEHOLDER: light and moderate have 25% chance of hitting each limb (except specific cases), severe is abdominal or head. Light leg wound gives -4 movement, severe gives -6 movement.\\
+
+TODO: HP recovery rules\\
+	Full recovery on a long rest.\\
+	Short rest:\\
+		If <= 1/5, then raise to 1/2\\
+		If <= 1/2, then raise to full\\
+
+TODO: sanity and sanity recovery. Recover all sanity between scenarios, but never within (except in special cases). Gain an insanity (term?) at 1/2, 1/5, 0 thresholds, which must be healed using therapy.\\
+
+TODO: Fatigue?\\
+
+TODO: Damage interrupts any action?\\
+
+TODO: restrictions on readying\\
+	target\\
+	targeter of target\\
+	target area\\
+	use intuition more\\
+
+TODO: Types of shot:\\
+	Snap shot (primary): 25 meter with assault rifle\\
+	Aimed shot (complex)\\
+
+TODO: Limit reaction shots by resetting the handling counter on a reaction shot\\
+	Also specify >= or > for number of move points\\
+
+TODO: Sanity creates phobias which are detailed in the scenario and are hidden from the player. they can be treated once the trigger is known\\
+	Change perception of character through narration of non-real events\\
+
+TODO: https://en.wikipedia.org/wiki/Point\_shooting	for medium range\\
+
+\chapter{Combat at a Distance}
+TODO all\\
+
+\chapter{Piloting Vehicles}
+TODO all\\
+TODO:https://hackslashmaster.blogspot.com.au/2017/01/on-ship-design.html\\
+
+\part{Venn Epoch Supplements}
+TODO: Agricultural Age, Early Modern Age, Industrial Age, Digital Age, Autonomous Age, Space age.\\
+
+\chapter{Agricultural Age}
+TODO all\\
+
+\chapter{Industrial Age}
+TODO all\\
+
+\section{Weapons}
+TODO: Improve table formatting.\\
+
+Name\\
+Size\\
+Skill\\
+Dmg\\
+Crit\\
+Range\\
+Handling\\
+Cost\\
+Special\\
+Pistol\\
+Sm\\
+Fin\\
+1d4\\
+17\\
+0/TBD/TBD\\
+10\\
+TBD\\
+One-handed, no burst\\
+SMG\\
+Me\\
+Fin\\
+1d4\\
+17\\
+5/TBD/TBD\\
+15\\
+TBD\\
+Burst only\\
+Shotgun\\
+Me\\
+Fin,Prc\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+Assault Rifle\\
+Me\\
+Fin,Prc\\
+1d6\\
+18\\
+10/TBD/TBD\\
+20\\
+TBD\\
+
+Light MG\\
+La\\
+Hvy\\
+1d6\\
+18\\
+15/TBD/TBD\\
+25\\
+TBD\\
+Integrated bipod, burst only,  -3 base to hit, +5 means bonus to hit\\
+Battle Rifle\\
+La\\
+Prc\\
+1d8\\
+19\\
+15/TBD/TBD\\
+25\\
+TBD\\
+
+Medium MG\\
+La\\
+Hvy\\
+1d8\\
+19\\
+20/TBD/TBD\\
+30\\
+TBD\\
+Integrated bipod, burst only, -4 base to hit, +7 means bonus to hit, -2 movement points\\
+Anti-Material Rifle\\
+La\\
+Prc\\
+1d10\\
+20\\
+25/TBD/TBD\\
+30\\
+TBD\\
+-2 movement points\\
+Heavy MG\\
+Hu\\
+Hvy\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+Frag. Grenade\\
+Sm\\
+Ath\\
+1d12\\
+--\\
+0/50/100\\
+N/A\\
+
+30ft radius explosion, piercing\\
+Conc. Grenade\\
+Sm\\
+Ath\\
+1d12\\
+--\\
+0/50/100\\
+N/A\\
+
+10ft radius explosion, bludgeoning\\
+Underbarrel\\
+Grenade Laun\\
+Sm\\
+Hvy,Prc\\
+1d12\\
+20\\
+30/TBD/TBD\\
+N/A\\
+TBD\\
+30ft radius explosion, piercing\\
+Breach-loaded\\
+Grenade Laun\\
+Me\\
+Hvy,Prc\\
+1d12\\
+20\\
+30/TBD/TBD\\
+N/A\\
+TBD\\
+30ft radius explosion, piercing\\
+Revolver\\
+Grenade Laun\\
+La\\
+Hvy\\
+1d12\\
+20\\
+30/TBD/TBD\\
+N/A\\
+TBD\\
+30ft radius explosion, piercing\\
+Automatic\\
+Grenade Laun\\
+Hu\\
+Hvy\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+Disposable\\
+Rocket Launch\\
+Me\\
+Hvy\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+Rocket Launch\\
+La\\
+Hvy\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+Guided\\
+Rocket Launch\\
+Hu\\
+Hvy\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD\\
+TBD, TODO: move to digital age\\
+
+TODO: disposable flamethrower, backpack flamethrower, mounted flamethrower, small mortar, large mortar, taser, stun baton, tranquilizer gun.\\
+
+Weapon variants and attachments:\\
+Name\\
+Type\\
+Modifies\\
+Effect\\
+Carbine\\
+Variant\\
+Rifles\\
+-1 base hit, handling -5, min. range -5\\
+Bullpup\\
+Variant\\
+Guns\\
+Reduce size by one, -2 base hit, handling -5, min range -5\\
+Scope +1\\
+Sight\\
+Rifles\\
++1 base hit, handling +5, min. range +5\\
+Scope +2\\
+Sight\\
+Rifles\\
++2 base hit, +1 crit range, handling +10, min. range +10\\
+Scope +3\\
+Sight\\
+Rifles\\
++3 base hit, +1 crit range, handling +15, min. range +15\\
+NV Scope\\
+Sight\\
+Rifles\\
+Nightvision while aiming, handling +15, min. range +5\\
+TH Scope\\
+Sight\\
+Rifles\\
+Infravision while aiming, handling +20,\\
+min. range +5\\
+V. For. Grip\\
+Under-barrel\\
+Rifles\\
+Improve handling by -5\\
+Bipod\\
+Under-barrel\\
+Rifles\\
+Means bonus to hit while in cover or prone\\
+UB G. Laun\\
+Under-barrel\\
+Rifles\\
+Grenade launcher, +15 handling\\
+Bayonet\\
+UB\\
+Rifles\\
+TBD\\
+Tac Light\\
+TBD\\
+Guns\\
+Light source, detail TBD\\
+Laser Sight\\
+TBD\\
+Guns\\
+TBD\\
+Suppressor\\
+Bar Att\\
+Rifles\\
+Firing quieter, detail TBD\\
+Ext. Mag.\\
+Mag\\
+Guns, non MG\\
++5 handling, allows burst fire\\
+
+NOTE: Weapons, variants, and mods are a work in progress and subject to change.\\
+
+TODO: change all distances to point-based.\\
+
+TODO: ammunition types:\\
+	Pistol cartridge: 1d4, example: 9mm\\
+	Intermediate cartridge: 1d6, example: 5.56x45mm\\
+	Rifle cartridge: 1d8, example: 7.62x51mm\\
+	Hi-caliber cartridge: 1d10, example: .50 BMG\\
+	Auto-cannon cartridge (large vehicle mounted)\\
+	Artillery cartridge (e.g. for tanks)\\
+
+TODO: other ammunition:\\
+	Grenade (hand thrown)\\
+	Grenade launcher, example: 40x46mm\\
+	Rocket (non-guided)\\
+	Rocket (guided)\\
+	Small mortar\\
+	Large mortar\\
+TODO: grenade types: fragmentation, concussion, anti-tank, stun, smoke, tear gas, incendiary, flare. Also impact or timer.\\
+
+TODO: variants based on action: single-shot, repeating, automatic\\
+TODO: variants based on caliber\\
+TODO: distinguish machine guns by cooling, magazine, bipod, etc?\\
+TODO: barrel attachments: chokes for shotguns, flash suppressor\\
+TODO: sights: red-dot, holographic, iron\\
+TODO: magazines: tubular, box, drum, belt-fed\\
+
+\section{Gear}
+PLACEHOLDER gear:\\
+Name\\
+Slot\\
+Effect\\
+Ballistic Shield (Small)\\
+Offhand\\
++1 means to ranged defense,  +3 means to melee defense\\
+Ballistic Shield (Medium)\\
+Offhand\\
++2 means to ranged defense, +2 means to melee defense\\
+Ballistic Shield (Large)\\
+Offhand\\
++3 means to ranged defense, +1 means to melee defense, -2 movement\\
+Helmet\\
+Head\\
++1 physical damage reduction\\
+Ballistic Vest (Light)\\
+Body\\
++2 physical damage reduction\\
+Ballistic Vest (Medium)\\
+Body\\
++5 physical damage reduction, movement -2\\
+Ballistic Vest (Heavy)\\
+Body\\
++8 physical damage reduction, movement -4\\
+Chest Pouches\\
+Chest\\
+10 quick slots, -2 movement\\
+Duty Belt\\
+Waist\\
+4 quick slots\\
+Small Backpack\\
+Back\\
+12 inventory slots\\
+Medium Backpack\\
+Back\\
+24 inventory slots, -2 movement, requires +1 STR\\
+Large Backpack\\
+Back\\
+36 inventory slots, -4 movement, requires +2 STR\\
+Tactical Radio\\
+Slotless\\
+Allows team and command communication\\
+
+\section{Miscellaneous}
+PLACEHOLDER: Medkit. Survival roll to improve wound once by one step in 15min. Diff 8 for light, diff 10 for moderate, diff 12 for critical. Failure takes 30min.\\
+
+\chapter{Digital Age}
+TODO all\\
+
+\chapter{Autonomous Age}
+TODO all\\
+TODO: age is defined by technologies not requiring human intervention. Rise of AI, robotics, etc. Most near-future developments go here, but prefer age definition to near-future to help prevent Venn from becoming dated. Some near-future belongs in Digital Age.\\
+
+\chapter{Exotic Age}
+TODO all\\
+TODO: age is defined by technologies that are predicted on a theoretical basis, but no development method is known. Advanced manipulation of matter and energy at both very small and very large scales.\\
+
+\chapter{Distortion Technology}
+TODO all\\
+TODO: “one big lie” science fiction defined by the ability to distort space using a black-box. Distortions travel FTL, allowing instant communications, “warp” drive, shields, tractor beams, etc. Also incorporation as a part of other tech to allow advanced matter/energy manipulation.\\
+
+\chapter{Noosphere Supplement}
+TODO all\\
+TODO: softer “one big lie” science fiction based on “special” physics only applicable to things with minds, i.e. telepathy.\\
+
+\chapter{Magic Supplement}
+TODO all\\
+TODO: essentially hand-wavy technology accessed through ritual with standardized behavior.\\
+TODO: Concentration? When is it required?\\
+
+TODO: schools? Opposition?\\
+	Conjuration	opposed by	transmutation\\
+	evocation	opposed by	abjuration\\
+	divination	opposed by	illusion\\
+	enchantment	opposed by	necromancy\\
+
+\chapter{Supernatural Supplement}
+TODO all\\
+TODO: better name?\\
+TODO: catch-all for special abilities that obey their own rules without regard to integration with some standard. i.e. Superman’s powers are governed by arbitrary rules that apply only to his powers and not to any other superheroes’ powers.\\
+
+\part{Supported Venn Settings}
+
+\chapter{SCP Foundation Universe}
+TODO all\\
+
+\section{Factions}
+	Alexylva University\\
+	Anderson Robotics\\
+	Are We Cool Yet?\\
+	The Chaos Insurgency\\
+	The Church of the Broken God\\
+	Doctor Wondertainment\\
+	The Factory\\
+	The Fifth Church\\
+	Gamers Against Weed\\
+	The Global Occult Foundation\\
+	GRU Division “P”\\
+	Herman Fuller’s Circus of the Disquieting\\
+	The Horizon Initiative\\
+	Manna Charitable Foundation\\
+	Marshall, Carter, and Dark Ltd.\\
+	“Nobody”\\
+	Office for the Reclamation of Islamic Artifacts (ORIA)\\
+	Oneiroi Collective\\
+	Prometheus Labs, Inc.\\
+	Sarkic Cults\\
+	The SCP Foundation\\
+	The Serpent’s Hand\\
+	Unusual Incidents Unit (UIU), Federal Bureau of Intelligence\\
+
+\section{Major Locations}
+TODO all\\
+
+\section{Persons of Interest}
+TODO all\\
+
+\appendix
+
+\chapter{Prebuilt Material}
+
+\section{Weapons}
+
+\backmatter
+
+
+
+Index
+Ability checks	3
+Acrobatics	10
+Acumen	10
+Agility	10
+Assist	3
+Athletics	11
+Attack rolls	2
+Attributes by point-buy	10
+Attributes by rolling	10
+Aware of a check	2
+Base modifier	4
+Checks	2
+Choose to fail	2
+Collaborative roll	4
+Consequences for failure	3
+Critical range	3
+Critical success	3
+Deception	11
+Deduction	11
+Design	11
+Determined to be impossible	3
+Dexterity	10
+Difficulty	2
+Environ modifier	4
+Fictitious simultaneity	5
+Finesse	10
+Free action	6
+Fumble	3
+Fumble range	3
+Group roll	3
+Heavy	11
+Implicit time	5
+Improvisation	11
+Initiative	6
+Insight	11
+Intelligence	10
+Intimidation	11
+Kinds of checks	2
+Lore	11
+Make a check collectively	3
+Means modifier	4
+Move action	6
+No consequence	3
+Numerical rolls	4
+Opposed ability check	3
+Other kinds of rolls	4
+Party	7
+Perception	11
+Persuasion	11
+Precision	11
+Primary action	6
+Priority	7
+Roll for initiative	7
+Round	5
+Saving throws	2
+Secondary action	6
+Sleight	10
+Special consequences	3
+Standard attributes	10
+Standard skills	10
+State modifier	4
+Stealth	11
+Strength	10
+Survival	11
+Table rolls	5
+Takes the initiative	7
+Time of day	5
+Timing rolls	5
+Tinker	11
+Turn	5
+Types of action	6
+Types of modifier	4
+Venn diagram	4
+Waste time	3
+Willpower	10
+
+\end{document}
+\grid
